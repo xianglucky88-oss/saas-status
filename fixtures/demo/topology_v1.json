@@ -1,0 +1,23 @@
+{
+  "generation_id": "topo-2026w45",
+  "effective_from": "2026-11-09T00:00:00Z",
+  "nodes": [
+    {"id": "svc-webshop", "kind": "service", "name": "Web Shop"},
+    {"id": "svc-checkout", "kind": "service", "name": "Checkout"},
+    {"id": "svc-portal", "kind": "service", "name": "Customer Portal"},
+    {"id": "comp-api-gateway", "kind": "component", "name": "API Gateway"},
+    {"id": "comp-billing", "kind": "component", "name": "Billing"},
+    {"id": "comp-auth", "kind": "component", "name": "Auth"}
+  ],
+  "edges": [
+    {"kind": "owns", "source": "svc-webshop", "target": "comp-api-gateway"},
+    {"kind": "owns", "source": "svc-checkout", "target": "comp-billing"},
+    {"kind": "owns", "source": "svc-portal", "target": "comp-auth"},
+    {"kind": "depends_on", "source": "svc-webshop", "target": "comp-api-gateway"},
+    {"kind": "depends_on", "source": "svc-webshop", "target": "comp-billing"},
+    {"kind": "depends_on", "source": "svc-checkout", "target": "comp-api-gateway"},
+    {"kind": "depends_on", "source": "svc-checkout", "target": "comp-billing"},
+    {"kind": "depends_on", "source": "svc-portal", "target": "comp-auth"},
+    {"kind": "depends_on", "source": "svc-portal", "target": "comp-api-gateway"}
+  ]
+}

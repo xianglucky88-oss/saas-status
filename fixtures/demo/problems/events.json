@@ -1,0 +1,4 @@
+[
+  {"service":"Service X","component":"Mystery Box","event_id":"INC-900","started_at":"2026-11-05T00:00:00Z","updated_at":"2026-11-05T00:30:00Z","state":"investigating","impact":"major","summary":"Event on a component absent from the topology","source_ref":"status-page"},
+  {"service":"Service Y","component":"Component A","event_id":"INC-901","started_at":"2026-11-05T01:00:00Z","updated_at":"2026-11-05T01:30:00Z","state":"weird-state","impact":"major","summary":"Observation with an unrecognized state","source_ref":"status-page"}
+]

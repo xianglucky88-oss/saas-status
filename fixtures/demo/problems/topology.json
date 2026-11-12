@@ -1,0 +1,16 @@
+{
+  "generation_id": "topo-problem-cases",
+  "effective_from": "2026-11-01T00:00:00Z",
+  "nodes": [
+    {"id": "svc-x", "kind": "service", "name": "Service X"},
+    {"id": "svc-y", "kind": "service", "name": "Service Y"},
+    {"id": "comp-a", "kind": "component", "name": "Component A"},
+    {"id": "comp-b", "kind": "component", "name": "Component B"}
+  ],
+  "edges": [
+    {"kind": "depends_on", "source": "svc-x", "target": "comp-ghost"},
+    {"kind": "depends_on", "source": "svc-y", "target": "comp-a"},
+    {"kind": "depends_on", "source": "comp-a", "target": "comp-b"},
+    {"kind": "depends_on", "source": "comp-b", "target": "comp-a"}
+  ]
+}

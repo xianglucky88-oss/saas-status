@@ -1,0 +1,8 @@
+[
+  {"service":"Checkout","component":"Billing","event_id":"INC-100","started_at":"2026-11-10T02:00:00Z","updated_at":"2026-11-10T02:00:00Z","state":"investigating","impact":"major","summary":"Billing settlement failures","source_ref":"status-page"},
+  {"service":"Checkout","component":"Billing","event_id":"INC-100","started_at":"2026-11-10T02:00:00Z","updated_at":"2026-11-10T03:00:00Z","state":"identified","impact":"major","summary":"Root cause identified in settlement worker","source_ref":"status-page"},
+  {"service":"Checkout","component":"Billing","event_id":"INC-100","started_at":"2026-11-10T02:00:00Z","updated_at":"2026-11-10T05:00:00Z","state":"monitoring","impact":"minor","summary":"Fix deployed, monitoring settlement","source_ref":"rss-feed"},
+  {"service":"Checkout","component":"Billing","event_id":"INC-100","started_at":"2026-11-10T02:00:00Z","updated_at":"2026-11-10T08:00:00Z","state":"resolved","impact":"minor","summary":"Billing recovered","source_ref":"status-page"},
+  {"service":"Web Shop","component":"API Gateway","event_id":"INC-200","started_at":"2026-11-10T04:00:00Z","updated_at":"2026-11-10T04:00:00Z","state":"investigating","impact":"critical","summary":"Gateway returning 5xx","source_ref":"status-page"},
+  {"service":"Web Shop","component":"API Gateway","event_id":"INC-200","started_at":"2026-11-10T04:00:00Z","updated_at":"2026-11-10T06:00:00Z","state":"identified","impact":"critical","summary":"Overloaded gateway nodes","source_ref":"status-page"}
+]

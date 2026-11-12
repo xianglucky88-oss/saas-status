@@ -1,0 +1,4 @@
+[
+  {"service":"Acme Cloud","component":"API","event_id":"INC-1","started_at":"2026-11-10T01:00:00Z","updated_at":"2026-11-10T01:10:00Z","state":"investigating","impact":"major","summary":"Elevated error rate","source_ref":"status-api"},
+  {"service":"acme cloud","component":"api","event_id":"INC-1","started_at":"2026-11-10T01:00:00Z","updated_at":"2026-11-10T01:20:00Z","state":"resolved","impact":"major","summary":"Issue resolved","source_ref":"rss"}
+]
